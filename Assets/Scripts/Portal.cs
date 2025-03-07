@@ -39,7 +39,7 @@ public class Portal : MonoBehaviour
         rb.velocity = velocity;
 
         // Wait to prevent instant re-entry
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         // Re-enable both portal colliders
         portalCollider.enabled = true;
